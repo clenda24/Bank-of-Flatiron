@@ -1,18 +1,38 @@
-import { useEffect } from "react";
-import React,{useEffect} from "react";
-import AccountContainer from "./AccountContainer";
-import "./App.css";
+import React, { useState } from 'react';
+import TransactionTable from './components/TransactionTable';
+import TransactionForm from './components/TransactionForm';
+import SearchBar from './components/SearchBar';
 
 function App() {
+  const [transactions, setTransactions] = useState([
+    {
+      id: 1,
+      date: '20/02/2024',
+      description: 'Sunglasses',
+      category: 'Fashion',
+      amount: '$20',
+    },
+    {
+      id: 2,
+      date: '25/02/2024',
+      description: 'Birthday',
+      category: 'Shopping',
+      amount:'$500',
+    },
+  ]);
+
+  const addTransaction = (newTransaction) => {
+    setTransactions([...transactions, newTransaction]);
+  };
 
   return (
-    <div className="ui raised segment">
-      <div className="ui segment violet inverted">
-        <h2>The Royal Bank of Flatiron</h2>
-      </div>
-      <AccountContainer />
+    <div className="App">
+      <h1>The Royal Bank Of Flatiron</h1>
+      <TransactionForm addTransaction={addTransaction} />
+      <SearchBar transactions={transactions} setTransactions={setTransactions} />
+      <TransactionTable transactions={transactions} />
     </div>
   );
 }
 
-export default App;
+export default App ;
