@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import TransactionTable from './components/TransactionTable';
-import TransactionForm from './components/TransactionForm';
-import SearchBar from './components/SearchBar';
-
+import { useState, useEffect } from 'react';
+import './App.css';
+import Search from './components/Search';
+import Table from './components/Table';
+import Form from './components/Form';
 function App() {
   const [transactions, setTransactions] = useState([
     {
@@ -26,13 +26,13 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>The Royal Bank Of Flatiron</h1>
-      <TransactionForm addTransaction={addTransaction} />
-      <SearchBar transactions={transactions} setTransactions={setTransactions} />
-      <TransactionTable transactions={transactions} />
+    <div className='container'>
+      <div> <h1>The Royal Bank Of Flatiron </h1> </div>
+      <Search transactions={transactions} setTransactions = {setTransactions}  />
+      <Form transactions={transactions} setTransactions={setTransactions}/>
+      <Table transactions={transactions} setTransactions = {setTransactions} />
     </div>
   );
 }
 
-export default App ;
+export default App;
