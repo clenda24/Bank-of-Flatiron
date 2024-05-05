@@ -1,7 +1,7 @@
 {
   "name": "bank-of-flariton",
   "version": "0.1.0",
-  "homepage": "https://clenda24.github.io/react-gh-pages",
+  "homepage": "https://clenda24.github.io/Bank-of-Flatiron",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
