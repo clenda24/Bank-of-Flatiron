@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.d070eabf.css",
-    "main.js": "/react-gh-pages/static/js/main.97b1cd35.js",
-    "static/js/453.a5567a63.chunk.js": "/react-gh-pages/static/js/453.a5567a63.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.d070eabf.css.map": "/react-gh-pages/static/css/main.d070eabf.css.map",
-    "main.97b1cd35.js.map": "/react-gh-pages/static/js/main.97b1cd35.js.map",
-    "453.a5567a63.chunk.js.map": "/react-gh-pages/static/js/453.a5567a63.chunk.js.map"
+    "main.css": "/Bank-of-Flatiron/static/css/main.d070eabf.css",
+    "main.js": "/Bank-of-Flatiron/static/js/main.ba026423.js",
+    "static/js/453.a5567a63.chunk.js": "/Bank-of-Flatiron/static/js/453.a5567a63.chunk.js",
+    "index.html": "/Bank-of-Flatiron/index.html",
+    "main.d070eabf.css.map": "/Bank-of-Flatiron/static/css/main.d070eabf.css.map",
+    "main.ba026423.js.map": "/Bank-of-Flatiron/static/js/main.ba026423.js.map",
+    "453.a5567a63.chunk.js.map": "/Bank-of-Flatiron/static/js/453.a5567a63.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d070eabf.css",
-    "static/js/main.97b1cd35.js"
+    "static/js/main.ba026423.js"
   ]
 }
